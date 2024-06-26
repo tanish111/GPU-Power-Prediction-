@@ -1,0 +1,14 @@
+./gaussian -f ../../data/gaussian/matrix3.txt
+./gaussian -f ../../data/gaussian/matrix4.txt
+./gaussian -f ../../data/gaussian/matrix16.txt
+./gaussian -f ../../data/gaussian/matrix1024.txt
+./gaussian -f ../../data/gaussian/matrix1124.txt
+./gaussian -f ../../data/gaussian/matrix1224.txt
+./gaussian -f ../../data/gaussian/matrix1324.txt
+./gaussian -f ../../data/gaussian/matrix1424.txt
+./gaussian -f ../../data/gaussian/matrix1524.txt
+./gaussian -f ../../data/gaussian/matrix1624.txt
+./gaussian -f ../../data/gaussian/matrix1724.txt
+./gaussian -f ../../data/gaussian/matrix1824.txt
+./gaussian -f ../../data/gaussian/matrix1924.txt
+./gaussian -f ../../data/gaussian/matrix2048.txt

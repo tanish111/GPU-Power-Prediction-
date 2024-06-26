@@ -1,0 +1,7 @@
+bpnn_layerforward_CUDA, 29184, 4, 85, 64, 71 , 452703768.000000, 32218, 
+bpnn_layerforward_CUDA, 29184, 4, 87, 83, 85 , 446711431.000000, 39153, 
+bpnn_layerforward_CUDA, 29184, 4, 83, 83, 83 , 1299627.000000, 0, 
+bpnn_layerforward_CUDA, 7296, 64, 86, 65, 74 , 434059969.000000, 31852, 
+bpnn_layerforward_CUDA, 3648, 256, 87, 64, 73 , 443342403.000000, 31959, 
+bpnn_layerforward_CUDA, 3648, 256, 83, 83, 83 , 1271440.000000, 0, 
+bpnn_layerforward_CUDA, 29184, 4, 64, 64, 64 , 1283786.000000, 0, 

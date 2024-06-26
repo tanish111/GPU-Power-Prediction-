@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Get the list of files from the file
+files=$(cat filelist_4)
+# Iterate over the files and copy them to the new directory
+for file in $files; do
+  echo "$file" > filerun.txt
+  ./nn filerun.txt -r 10 -lat 30 -lng 90
+done

@@ -1,0 +1,116 @@
+# 212 "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h" 3
+typedef unsigned long size_t;
+#include "crt/device_runtime.h"
+# 144 "/usr/include/bits/types.h" 3
+typedef long __clock_t;
+# 59 "/usr/include/time.h" 3
+typedef __clock_t clock_t;
+#if !defined(__CUDABE__)
+# 189 "/usr/include/time.h" 3
+ __device_builtin__ ___device__(extern  __no_sc__) __attribute__((__nothrow__)) clock_t clock(void);
+#endif
+#if !defined(__CUDABE__)
+# 160 "/opt/apps/cuda/7.5/bin/..//include/device_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) void __syncthreads(void);
+#endif
+# 39 "clock.cu"
+__global__ __var_used__ static void _Z14timedReductionPKfPfPl(const float *, float *, clock_t *);
+# 42 "clock.cu"
+extern  __shared__ float shared[];
+#include "common_functions.h"
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+# 39 "clock.cu"
+__global__ __var_used__ static void _Z14timedReductionPKfPfPl(
+# 39 "clock.cu"
+const float *input, 
+# 39 "clock.cu"
+float *output, 
+# 39 "clock.cu"
+clock_t *timer){
+# 39 "clock.cu"
+{
+# 40 "clock.cu"
+{
+# 44 "clock.cu"
+ int __cuda_local_var_72660_15_non_const_tid;
+# 45 "clock.cu"
+ int __cuda_local_var_72661_15_non_const_bid;
+# 44 "clock.cu"
+__cuda_local_var_72660_15_non_const_tid = ((int)(threadIdx.x));
+# 45 "clock.cu"
+__cuda_local_var_72661_15_non_const_bid = ((int)(blockIdx.x));
+# 47 "clock.cu"
+if (__cuda_local_var_72660_15_non_const_tid == 0)
+# 47 "clock.cu"
+{
+# 47 "clock.cu"
+(timer[__cuda_local_var_72661_15_non_const_bid]) = (clock());
+# 47 "clock.cu"
+}
+# 50 "clock.cu"
+((shared)[__cuda_local_var_72660_15_non_const_tid]) = (input[__cuda_local_var_72660_15_non_const_tid]);
+# 51 "clock.cu"
+((shared)[(((unsigned)__cuda_local_var_72660_15_non_const_tid) + (blockDim.x))]) = (input[(((unsigned)__cuda_local_var_72660_15_non_const_tid) + (blockDim.x))]);
+# 51 "clock.cu"
+{
+# 54 "clock.cu"
+ int d;
+# 54 "clock.cu"
+d = ((int)(blockDim.x));
+# 54 "clock.cu"
+for (; (d > 0); d /= 2)
+# 55 "clock.cu"
+{
+# 56 "clock.cu"
+__syncthreads();
+# 58 "clock.cu"
+if (__cuda_local_var_72660_15_non_const_tid < d)
+# 59 "clock.cu"
+{
+# 60 "clock.cu"
+ float __cuda_local_var_72676_19_non_const_f0;
+# 61 "clock.cu"
+ float __cuda_local_var_72677_19_non_const_f1;
+# 60 "clock.cu"
+__cuda_local_var_72676_19_non_const_f0 = ((shared)[__cuda_local_var_72660_15_non_const_tid]);
+# 61 "clock.cu"
+__cuda_local_var_72677_19_non_const_f1 = ((shared)[(__cuda_local_var_72660_15_non_const_tid + d)]);
+# 63 "clock.cu"
+if (__cuda_local_var_72677_19_non_const_f1 < __cuda_local_var_72676_19_non_const_f0)
+# 64 "clock.cu"
+{
+# 65 "clock.cu"
+((shared)[__cuda_local_var_72660_15_non_const_tid]) = __cuda_local_var_72677_19_non_const_f1;
+# 66 "clock.cu"
+}
+# 67 "clock.cu"
+}
+# 68 "clock.cu"
+}
+# 68 "clock.cu"
+}
+# 71 "clock.cu"
+if (__cuda_local_var_72660_15_non_const_tid == 0)
+# 71 "clock.cu"
+{
+# 71 "clock.cu"
+(output[__cuda_local_var_72661_15_non_const_bid]) = ((shared)[0]);
+# 71 "clock.cu"
+}
+# 73 "clock.cu"
+__syncthreads();
+# 75 "clock.cu"
+if (__cuda_local_var_72660_15_non_const_tid == 0)
+# 75 "clock.cu"
+{
+# 75 "clock.cu"
+(timer[(((unsigned)__cuda_local_var_72661_15_non_const_bid) + (gridDim.x))]) = (clock());
+# 75 "clock.cu"
+}
+# 76 "clock.cu"
+} 
+# 76 "clock.cu"
+}}

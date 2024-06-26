@@ -1,0 +1,15 @@
+./bfs ../../data/bfs/graph1k.txt
+./bfs ../../data/bfs/graph2k.txt
+./bfs ../../data/bfs/graph4k.txt
+./bfs ../../data/bfs/graph8k.txt
+./bfs ../../data/bfs/graph16k.txt
+./bfs ../../data/bfs/graph32k.txt
+./bfs ../../data/bfs/graph64k.txt
+./bfs ../../data/bfs/graph128k.txt
+./bfs ../../data/bfs/graph256k.txt
+./bfs ../../data/bfs/graph512k.txt
+./bfs ../../data/bfs/graph1M.txt
+./bfs ../../data/bfs/graph2M.txt
+./bfs ../../data/bfs/graph4M.txt
+./bfs ../../data/bfs/graph8M.txt
+./bfs ../../data/bfs/graph16M.txt
