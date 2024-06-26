@@ -1,0 +1,3 @@
+==3679084== NVPROF is profiling process 3679084, command: ./driver 8383
+==3679084== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3679084== Error: Application encountered error: an illegal memory access was encountered (700).

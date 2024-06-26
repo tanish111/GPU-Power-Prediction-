@@ -1,0 +1,23 @@
+         10                        achieved_occupancy                                         Achieved Occupancy    0.622883    0.633303    0.628247
+         10                       atomic_transactions                                        Atomic Transactions           0           0           0
+         10                          gld_transactions                                   Global Load Transactions     6528317     6531040     6529682
+         10                            gld_throughput                                     Global Load Throughput  367.50GB/s  378.27GB/s  373.04GB/s
+         10                          gst_transactions                                  Global Store Transactions     6859148     6859148     6859148
+         10                            gst_throughput                                    Global Store Throughput  385.99GB/s  397.44GB/s  391.87GB/s
+         10                             sm_efficiency                                    Multiprocessor Activity      99.07%      99.21%      99.14%
+         10                    tex_cache_transactions               Unified cache to Multiprocessor transactions     4467127     4467173     4467147
+         10                   local_load_transactions                                    Local Load Transactions           0           0           0
+         10                     local_load_throughput                               Local Memory Load Throughput  0.00000B/s  0.00000B/s  0.00000B/s
+         10                    local_store_throughput                              Local Memory Store Throughput  0.00000B/s  0.00000B/s  0.00000B/s
+         10                      local_store_requests   Total number of local store requests from Multiprocessor           0           0           0
+         10                                       ipc                                               Executed IPC    0.394871    0.446837    0.421125
+         10                              inst_control                                  Control-Flow Instructions    40043584    40043584    40043584
+         10                             inst_executed                                      Instructions Executed    24230372    24230372    24230372
+         10                               cf_executed                         Executed Control-Flow Instructions     5103759     5103759     5103759
+         10                        flop_dp_efficiency                               FLOP Efficiency(Peak Double)       0.00%       0.00%       0.00%
+         10                         flop_count_sp_fma            Floating Point Operations(Single Precision FMA)           0           0           0
+         10                         flop_count_sp_add            Floating Point Operations(Single Precision Add)           0           0           0
+         10                    shared_load_throughput                              Shared Memory Load Throughput  0.00000B/s  0.00000B/s  0.00000B/s
+         10                   shared_store_throughput                             Shared Memory Store Throughput  0.00000B/s  0.00000B/s  0.00000B/s
+         10                            stall_sleeping                             Issue Stall Reasons (Sleeping)       0.00%       0.00%       0.00%
+         10                           stall_pipe_busy                            Issue Stall Reasons (Pipe Busy)       1.12%       1.33%       1.22%

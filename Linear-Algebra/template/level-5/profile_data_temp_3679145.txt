@@ -1,0 +1,3 @@
+==3679145== NVPROF is profiling process 3679145, command: ./driver 19626
+==3679145== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3679145== Error: Internal profiling error 4075:999.
